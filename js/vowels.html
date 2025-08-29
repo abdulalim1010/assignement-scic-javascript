@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p><input type="text" id="alim" placeholder="enter your text"></p>
+  <button onclick="problem1()">voewls</button>
+  <P id="output">output</P>
+
+  <script>
+    function problem1() {
+      const str = document.getElementById("alim").value.toLowerCase()
+      const vowels = ['a', 'e', 'i', 'o', 'u']
+      let count = 0;
+      for (let char of str) {
+        if (vowels.includes(char)) {
+          count++;
+        }
+      }
+      document.getElementById("output").innerText = count;
+    }
+  </script>
+</body>
+
+</html>

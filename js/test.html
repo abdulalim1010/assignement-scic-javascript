@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>count to the voweels</h1>
+  <p><input type="text" id="alim" placeholder="enter the text"></p>
+  <button onclick="problem1()">vowels</button>
+  <p id="output">output=</p>
+  <script>
+    function problem1() {
+      const str = document.getElementById("alim").value.toLowerCase();
+      const voewls = ['a', 'e', 'i', 'o', 'u'];
+      let count = 0;
+      for (let char of str) {
+        if (voewls.includes(char)) {
+          count++;
+        }
+      }
+
+      document.getElementById("output").innerText = count;
+    }
+  </script>
+
+</body>
+
+</html>
