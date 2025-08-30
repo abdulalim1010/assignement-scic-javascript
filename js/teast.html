@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>add t o the first on the letter is capital</p>
+  <p><input type="text" placeholder="enter the text or sentence " id="onthe"></p>
+  <button onclick="problem1()">capital
+
+  </button>
+  <p id="endthe">output</p>
+  <script>
+    function problem1() {
+      const str = document.getElementById("onthe").value;
+      const capitalize = str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+      document.getElementById("endthe").innerText = capitalize
+    }
+
+
+  </script>
+
+</body>
+
+</html>
